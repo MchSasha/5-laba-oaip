@@ -1,0 +1,12 @@
+case 4:
+			if (!created) {
+				cout << "There is no stack!" << '\n';
+				break;
+			}
+			cout << "Task completed: " << '\n';
+			temp = begin_p;
+			begin_p = begin_p->next;
+			show(task(begin_p, search_min(begin_p)));
+			temp->next = begin_p;
+			begin_p = temp;
+			break;
